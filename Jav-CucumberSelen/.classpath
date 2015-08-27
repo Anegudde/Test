@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/Cucum1.1.5/cucumber-core-1.1.5.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/Cucum1.1.5/cucumber-java-1.1.5.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/Cucum1.1.5/cucumber-junit-1.1.5.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/Cucum1.1.5/cucumber-testng-1.1.5.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/cucumber-html-0.2.3.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/cucumber-jvm-deps-1.0.5.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/gherkin3-3.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/gherkin-jvm-deps-1.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/hamcrest-junit-2.0.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/selenium-java-2.47.1.jar"/>
+	<classpathentry kind="lib" path="D:/Work/Lib/selenium-server-standalone-2.39.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

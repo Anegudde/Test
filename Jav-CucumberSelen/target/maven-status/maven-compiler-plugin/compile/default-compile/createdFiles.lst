@@ -1,0 +1,4 @@
+Step_def\HtmlLocators.class
+Step_def\WebElements.class
+Step_def\Hooks.class
+Step_def\RunCukesTest.class

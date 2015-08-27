@@ -1,0 +1,564 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4888544721,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Identify html element",
+        "description": "",
+        "id": "use-html-locators;identify-html-element",
+        "after": [
+          {
+            "result": {
+              "duration": 1255317414,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4356905857,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I login to practiceselenium website",
+            "match": {
+              "location": "HtmlLocators.i_login_to_practiceselenium_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2723659653,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I access elements and use watir commands",
+            "match": {
+              "location": "HtmlLocators.i_access_elements_and_use_watir_commands()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Use html locators",
+    "description": "",
+    "id": "use-html-locators",
+    "keyword": "Feature",
+    "uri": "HtmlLocators.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5096222822,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Identify text field and print its html",
+        "description": "",
+        "id": "demonstrating-the-usage-of-web-elements;identify-text-field-and-print-its-html",
+        "after": [
+          {
+            "result": {
+              "duration": 1398000525,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3002904336,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open practiceselenium.com website",
+            "match": {
+              "location": "WebElements.i_open_practiceselenium_com_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2481487872,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I find first and last name and print the html",
+            "match": {
+              "location": "WebElements.i_find_first_and_last_name_and_print_the_html()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5042160653,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Identify link field and print its html",
+        "description": "",
+        "id": "demonstrating-the-usage-of-web-elements;identify-link-field-and-print-its-html",
+        "after": [
+          {
+            "result": {
+              "duration": 1212271006,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2144270191,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open practiceselenium.com website",
+            "match": {
+              "location": "WebElements.i_open_practiceselenium_com_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 698442773,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I find menu and print the html",
+            "match": {
+              "location": "WebElements.i_find_menu_and_print_the_html()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@sanity"
+          },
+          {
+            "line": 6,
+            "name": "@beta3"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4636614241,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Identify button field and print its html",
+        "description": "",
+        "id": "demonstrating-the-usage-of-web-elements;identify-button-field-and-print-its-html",
+        "after": [
+          {
+            "result": {
+              "duration": 1200978074,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2284335234,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I open practiceselenium.com website",
+            "match": {
+              "location": "WebElements.i_open_practiceselenium_com_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 701942745,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I find button and print the html",
+            "match": {
+              "location": "WebElements.i_find_button_and_print_the_html()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@not_ready"
+          },
+          {
+            "line": 10,
+            "name": "@parallel"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3387091852,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Identify radio button and print its html",
+        "description": "",
+        "id": "demonstrating-the-usage-of-web-elements;identify-radio-button-and-print-its-html",
+        "after": [
+          {
+            "result": {
+              "duration": 1158847868,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2608467126,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I open practiceselenium.com website",
+            "match": {
+              "location": "WebElements.i_open_practiceselenium_com_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2232371789,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I find radio button male and print the html",
+            "match": {
+              "location": "WebElements.i_find_radio_button_male_and_print_the_html()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4957397695,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Identify checkbox and print html",
+        "description": "",
+        "id": "demonstrating-the-usage-of-web-elements;identify-checkbox-and-print-html",
+        "after": [
+          {
+            "result": {
+              "duration": 1384077627,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3426361817,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I open practiceselenium.com website",
+            "match": {
+              "location": "WebElements.i_open_practiceselenium_com_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3214745940,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I find check box and print the html",
+            "match": {
+              "location": "WebElements.i_find_check_box_and_print_the_html()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@parallel"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4536226518,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Identify select list and print html",
+        "description": "",
+        "id": "demonstrating-the-usage-of-web-elements;identify-select-list-and-print-html",
+        "after": [
+          {
+            "result": {
+              "duration": 1170728387,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2547887260,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I open practiceselenium.com website",
+            "match": {
+              "location": "WebElements.i_open_practiceselenium_com_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4277903979,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I find select list and print html",
+            "match": {
+              "location": "WebElements.i_find_select_list_and_print_html()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3784240570,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Identify another select list and print html",
+        "description": "",
+        "id": "demonstrating-the-usage-of-web-elements;identify-another-select-list-and-print-html",
+        "after": [
+          {
+            "result": {
+              "duration": 1147759314,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2115653077,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I open practiceselenium.com website",
+            "match": {
+              "location": "WebElements.i_open_practiceselenium_com_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3113846921,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I find another select list and print html",
+            "match": {
+              "location": "WebElements.i_find_another_select_list_and_print_html()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3388804568,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Identify a div and print html",
+        "description": "",
+        "id": "demonstrating-the-usage-of-web-elements;identify-a-div-and-print-html",
+        "after": [
+          {
+            "result": {
+              "duration": 1184985500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2287287516,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I open practiceselenium.com website",
+            "match": {
+              "location": "WebElements.i_open_practiceselenium_com_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 539809781,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I find div and print html",
+            "match": {
+              "location": "WebElements.i_find_div_and_print_html()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Demonstrating the usage of web elements",
+    "description": "",
+    "id": "demonstrating-the-usage-of-web-elements",
+    "keyword": "Feature",
+    "uri": "WebElements.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@slow"
+      }
+    ]
+  }
+]

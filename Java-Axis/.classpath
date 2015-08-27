@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="chapter3/|chapter5/|chapter7/|chapter8/|chapter9/|chapter10/|chapter11/" kind="src" path=""/>
+	<classpathentry kind="src" path="chapter10"/>
+	<classpathentry kind="src" path="chapter11"/>
+	<classpathentry kind="src" path="chapter3"/>
+	<classpathentry kind="src" path="chapter5"/>
+	<classpathentry kind="src" path="chapter7"/>
+	<classpathentry kind="src" path="chapter8"/>
+	<classpathentry kind="src" path="chapter9"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
