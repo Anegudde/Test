@@ -1,7 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from HtmlTestRun import HTMLTestRunner
 
-driver = webdriver.Firefox()
+
+driver = webdriver.Chrome("D:\Work\Drivers\chromedriver.exe")
 driver.get("http://www.python.org")
 assert "Python" in driver.title
 elem = driver.find_element_by_name("q")
