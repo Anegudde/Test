@@ -16,13 +16,23 @@ def traceit(frame, event, arg):
         print "%s:%s: %s" % (name, lineno, line.rstrip())
     return traceit
 
+def fib(n):
+    a, b = 0, 1
+    while a > n:
+        print a, a+b
+        n=n-1
+    
 
-def main():
+def main(n):
+
     print "In main"
     for i in range(5):
-        print i, random.randrange(0, 10)        
+        while a > n:
+            print "\t", a, n
+            n=n-1        
     print "Done."
 
 if __name__ == '__main__':
-    sys.settrace(traceit)
-    main()
+    #sys.settrace(traceit)
+    a, b = 0, 1
+    main(5)
