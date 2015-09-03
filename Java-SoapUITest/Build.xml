@@ -1,0 +1,35 @@
+<project xmlns='antlib:org.apache.tools.ant'>
+<target name="clean">
+</target>
+	
+<target name="compile">
+    <mkdir dir="build/classes"/>
+    <javac srcdir="src/*.java" destdir="build/classes"/>
+</target>
+
+<target name="soapui-tests" depends="compile">
+    <mkdir dir="soapui-test-reports" />
+    <junit printsummary="withOutAndErr"
+           showoutput="true"
+           haltonerror="on"
+           haltonfailure="on"
+           filtertrace="off"
+           fork="no"
+           forkmode="once">
+      <classpath refid="classpath" />
+      <classpath refid="Java-SoapUITest" />
+      <formatter type="xml" />
+      <batchtest todir="../soapui-test-reports">
+        <fileset dir="tests">
+                <include name="**/*SoapUI*.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
+</target>
+	<path id="project.class.path" > 
+	    <!-- The path to the lib folder in the SoapUI installation.-->
+	    <fileset dir="D:\\Work\\Lib"/>
+	    <!-- The path to the bin folder in the SoapUI installation.-->
+	    <fileset dir="D:\\Work\\Lib\\SoapUI"/>
+	</path>
+</project>

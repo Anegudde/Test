@@ -11,9 +11,9 @@ https://dhirendrajha.wordpress.com/2011/08/31/html-report-using-htmltestrunner/
 
 class main_script(unittest.TestCase):    
     # for Firefox
-    #selenium = selenium("localhost", 4444, "*chrome","http://google.co.in")
-    #selenium.start()
-    #selenium.open("/")
+    selenium = selenium("localhost", 5555, "*chrome","http://google.co.in")
+    selenium.start()
+    selenium.open("/")
     # end of Firefox
     # for IE 
     #driver = webdriver.Ie("C:\\Python34\\IEDriverServer.exe")
@@ -30,9 +30,9 @@ class main_script(unittest.TestCase):
 #     selenium.open("/")              
     #display = Display(visible=0, size=(800, 600))
     #display.start()
-    driver = webdriver.Chrome("D:\Work\Drivers\chromedriver.exe")
-    driver.get("http://www.google.com")
-    print driver.page_source.encode('utf-8')
+    #driver = webdriver.Chrome("D:\Work\Drivers\chromedriver.exe")
+    #driver.get("http://www.google.com")
+    #print driver.page_source.encode('utf-8')
     pass
       
       
