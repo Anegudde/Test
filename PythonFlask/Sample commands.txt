@@ -1,0 +1,49 @@
+Server:
+$ mongod --dbpath d:\mongodb\data\db
+--------------------------------------
+Client:
+$ mongo
+--------------------------------------
+> show dbs -- to show the available databases
+> use easyBuy  -- switch to new database
+> db -- show the current connected database
+--------------------------------------
+Attributes of Mobile product:
+Product: iPhone6
+Price: 52500
+Make: Apple
+InStock: true
+Tag: [ mobile, apple]
+Spec: { screen: 4.7, thickness: 6.9 }
+Comments: [ 
+		{user: 'one', comment: 'Excellent'},
+		{user: 'one', comment: 'Excellent'}
+	   ]
+--------------------------------------
+> db.mobiles.count()  -- shows the number of records
+> db.mobiles.insert({title: 'iPhone6 plus'} );
+
+> db.mobiles.insert({
+	Product: 'iphone6',
+	Price: 52500,
+	Make: 'Apple',
+	InStock: true,
+	Tag: [ 'mobile', 'apple' ],
+	Spec: { screen: 4.7, thickness: 6.9 },
+	Comments: [
+		{user: 'one', comment: 'Excellent'},
+		{user: 'two', comment: 'Costly'}
+	   ] 
+	})
+
+>db.mobiles.find().forEach(printjson) -- displays the documents in good format
+
+Update:
+>db.mobiles.update( { Product: 'iphone6'}, { $set: { InStock: false } } )
+
+Delete:
+db.dropDatabase()
+db.mobiles.drop()
+db.mobiles.remove( { Product: 'iphone6'} )
+
+
