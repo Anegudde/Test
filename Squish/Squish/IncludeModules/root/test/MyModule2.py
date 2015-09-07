@@ -7,11 +7,11 @@ import squishinfo
 import squish
 '''
 def main():
-    print ("Testing Module Only")
+    print ("Testing Module2 Only")
 
-def Module_click_button(Test):
+def Module_TestModule2(Test):
     #squish.mouseClick(squish.waitForObject(obj_name))
-    print "In the Sub Module"
+    print "In the Module2"
 
 if __name__ == "__main__":
         main()
