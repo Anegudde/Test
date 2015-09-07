@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<TITLE>The title of this web page</TITLE>
+<Form name = frmOne>
+<textarea name = taAll rows = 10 cols = 15></textarea>
+<INPUT Type = button Value = " Get Lottery Numbers" onClick = getNumbers()>
+</form>
+<SCRIPT Language = JavaScript>
+
+function getNumbers() {
+TA = document.frmOne.taAll
+lottery = new Array(49)
+
+for (i = 1; i < 50; i++) {
+lottery[i] = i
+TA.value = TA.value + lottery[i] + "\n"
+}
+}
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+</BODY>
+</HTML>

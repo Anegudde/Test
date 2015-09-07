@@ -1,0 +1,164 @@
+<HTML>
+<HEAD>
+<TITLE>Comment Form</TITLE>
+<Script language = javascript>
+function Validate() {
+Message = "-"
+Message = Message + CheckName()
+Message = Message + CheckEmail()
+Message = Message + CheckComments()
+Message = Message + CheckLikes()
+Message = Message + CheckHates()
+	if (Message == "") {
+	return true
+	}
+	else {
+	alert(Message)
+	return false
+	}
+}
+	function CheckName() {
+	UserName = document.f1.Name.value
+		if (UserName == "") {
+		Message = "Something's wrong with your name" + "\n"
+		}
+		else {
+		Message = ""
+		}
+		return Message
+	}
+	function CheckEmail() {
+	email = document.f1.Email.value
+	AtPos = email.indexOf("@")
+	StopPos = email.lastIndexOf(".")
+	Message = ""
+	if (email == "") {
+	Message = "Not a valid Email address" + "\n"
+	return Message
+	}
+	if (AtPos == -1 || StopPos == -1) {
+	Message = "Not a valid email address" + "\n"
+	return Message
+	}
+	if (StopPos < AtPos) {
+	Message = "Not a valid email address" + "\n"
+	return Message
+	}
+	if (StopPos - AtPos == 1) {
+	Message = "Not a valid email address" + "\n"
+	return Message
+	} 
+}
+function CheckComments() {
+	comments = document.f1.Comments.value
+	if (comments == "Add Your Comments here") {
+		Message = "No Comments added" + "\n"
+	}
+	else {
+		Message = ""
+	}
+	return Message
+}
+function CheckLikes() {
+boxes = document.f1.Liked.length
+txt = ""
+	for (i = 0; i < boxes; i++) {
+		if (document.f1.Liked[i].checked) {
+		txt = txt + document.f1.Liked[i].value + " "
+		}
+	}
+	if (txt == "") {
+	Message = "No Likes Boxes ticked" + "\n"
+	}
+	else {
+	Message = ""
+	}
+	return Message
+}
+function CheckHates() {
+boxes = document.f1.Hated.length
+txt = ""
+	for (i = 0; i < boxes; i++) {
+		if (document.f1.Hated[i].checked) {
+			txt = txt + document.f1.Hated[i].value + " "
+		}
+	}
+	if (txt == "") {
+		Message = "No Hate Boxes ticked" + "\n"
+	}
+	else {
+		Message = ""
+	}
+	return Message
+}
+</script>
+</HEAD>
+<BODY BGCOLOR = White>
+<form name="f1" method="post" action="" onSubmit="return Validate()" enctype = text/plain>
+  <table width="672" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td width="142" valign="top" rowspan="4">&nbsp;</td>
+      <td valign="top" height="45" colspan="4" align="center"> <b>Name:</b> 
+        <input type="text" name="Name" size="30">
+      </td>
+    </tr>
+    <tr> 
+      <td height="40" valign="top" colspan="4" align="center"><b>Email: 
+        <input type="text" name="Email" size="30">
+        </b></td>
+    </tr>
+    <tr> 
+      <td height="151" valign="top" colspan="4" align="center"> 
+        <textarea name="Comments" cols="40" rows="7">Add Your Comments here</textarea>
+      </td>
+    </tr>
+    <tr> 
+      <td height="150" valign="top" colspan="2">&nbsp;</td>
+      <td valign="top" width="240"> <b>What did you like about the Site?</b> 
+        <p> 
+          <input type="checkbox" name="Liked" value="Cool Layout">
+          Cool Layout</p>
+        <p> 
+          <input type="checkbox"name="Liked" value="Easy to Navigaten">
+          Easy to Navigate</p>
+        <p> 
+          <input type="checkbox" name="Liked" value="Great Contents">
+          Great Contents</p>
+      </td>
+      <td width="240" valign="top"> <b>What did you hate about the site?</b> 
+        <p> 
+          <input type="checkbox" name="Hated" value="Awful Layou">
+          Awful Layout</p>
+        <p> 
+          <input type="checkbox" name="Hated" value="Difficult to Navigate">
+          Difficult to Navigate</p>
+        <p> 
+          <input type="checkbox" name="Hated" value="Lousy Contents">
+          Lousy Contents</p>
+      </td>
+    </tr>
+    <tr align="center"> 
+      <td height="80" colspan="2" valign="top">&nbsp;</td>
+      <td valign="top" colspan="3"> 
+        <input type="submit" name="Submit" value="Submit This Form">
+        <input type="reset" name="Submit2" value="Reset This Form">
+      </td>
+    </tr>
+    <tr> 
+      <td height="0"></td>
+      <td width="40"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> 
+      <td height="1"></td>
+      <td></td>
+      <td width="10"></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</form>
+</BODY>
+</HTML>

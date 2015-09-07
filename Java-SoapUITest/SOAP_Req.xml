@@ -1,0 +1,7 @@
+<s12:Envelope xmlns:s12='http://www.w3.org/2003/05/soap-envelope'>
+<s12:Body>
+<ns1:GetCitiesByCountry xmlns:ns1='http://www.webserviceX.NET'>
+<ns1:CountryName xmlns:ns1='http://www.webserviceX.NET'>Poland</ns1:CountryName>
+</ns1:GetCitiesByCountry>
+</s12:Body>
+</s12:Envelope>

@@ -1,0 +1,45 @@
+:2_HTML_Object	{container=':_SPAView' innerText='2' tagName='TD' type='HTML_Object'}
+:Additional Tab_HTML_Object	{container=':_SPAView' innerText='Additional Tab' tagName='A' type='HTML_Object'}
+:Analysis_HTML_Object	{container=':_SPAView' innerText='Analysis' tagName='A' type='HTML_Object'}
+:Analytics Title Data Summary and Subtitle. Showing study #453_HTML_Object	{container=':_SPAView' innerText='Analytics Title Data Summary and Subtitle. Showing study #453' tagName='DIV' type='HTML_Object'}
+:John Smith_HTML_Object	{container=':_SPAView' innerText='John Smith' tagName='A' type='HTML_Object'}
+:Patient Detail Patient Overview Post Care Analytics Comments_HTML_Object	{container=':_SPAView' innerText='Patient Detail Patient Overview Post Care Analytics Comments' tagName='DIV' type='HTML_Object'}
+:Patient List_HTML_Object	{container=':_SPAView' innerText='Patient List' tagName='DIV' type='HTML_Object'}
+:Post Care_HTML_Object	{container=':_SPAView' innerText='Post Care' tagName='A' type='HTML_Object'}
+:Post Op Check In_HTML_Object	{container=':_SPAView' innerText='Post Op Check In' occurrence='2' tagName='DIV' type='HTML_Object'}
+:Q2_Dashboard_Text	{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1.DIV2.DIV1.H11
+:Q2_HomePage_General Electric My Application_HTML_Object	{container=':_SPAView' innerText='General Electric My Application' tagName='A' type='HTML_Object'}
+:Q2_HomePage_NavigationTab_Dashboard_HTML_Object	{container=':_SPAView' innerText='Dashboard' tagName='A' type='HTML_Object'}
+:Q2_HomePage_NavigationTab_Patient Detail_HTML_Object	{container=':_SPAView' innerText='Patient Detail' tagName='A' type='HTML_Object'}
+:Q2_HomePage_NavigationTab_Patient List_HTML_Object	{container=':_SPAView' innerText='Patient List' tagName='A' type='HTML_Object'}
+:Reports_HTML_Object	{container=':_SPAView' innerText='Reports' tagName='A' type='HTML_Object'}
+:See More Details. Explore this._submit	{container=':_SPAView' innerText='See More Details. Explore this.' tagName='BUTTON' type='submit'}
+:Vew Details_submit	{container=':_SPAView' innerText='Vew Details' tagName='BUTTON' type='submit'}
+:Viewing Checkbox 1 Checkbox 2 Checkbox 3 Option1 Option2 Option3 Option4_HTML_Object	{container=':_SPAView' innerText='Viewing Checkbox 1 Checkbox 2 Checkbox 3 Option1 Option2 Option3 Option4' occurrence='2' tagName='DIV' type='HTML_Object'}
+:_MainWindow	{type='MainWindow' unnamed='1' visible='1'}
+:_SPAView	{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}
+:_WebCore::QtWebComboBox	{type='WebCore::QtWebComboBox' unnamed='1' visible='0' window=':_MainWindow'}
+:_select-one	{container=':_SPAView' occurrence='5' tagName='SELECT' type='select-one'}
+:_select-one_2	{container=':_SPAView' occurrence='6' tagName='SELECT' type='select-one'}
+:_select-one_3	{container=':_SPAView' occurrence='7' tagName='SELECT' type='select-one'}
+:_select-one_4	{container=':_SPAView' occurrence='8' tagName='SELECT' type='select-one'}
+:_text	{container=':_SPAView' occurrence='2' tagName='INPUT' type='text'}
+:_text_2	{container=':_SPAView' occurrence='3' tagName='INPUT' type='text'}
+:check1_checkbox	{container=':_SPAView' tagName='INPUT' type='checkbox' value='check1'}
+:check2_checkbox	{container=':_SPAView' tagName='INPUT' type='checkbox' value='check2'}
+:check3_checkbox	{container=':_SPAView' tagName='INPUT' type='checkbox' value='check3'}
+:optionsRadios_radio	{container=':_SPAView' id~='optionsRadios[1-2]' name='optionsRadios' tagName='INPUT' type='radio' value='option1'}
+:optionsRadios_radio_2	{container=':_SPAView' id='optionsRadios1' name='optionsRadios' tagName='INPUT' type='radio' value='option2'}
+:optionsRadios_radio_3	{container=':_SPAView' id='optionsRadios1' name='optionsRadios' tagName='INPUT' type='radio' value='option3'}
+:optionsRadios_radio_4	{container=':_SPAView' id='optionsRadios1' name='optionsRadios' tagName='INPUT' type='radio' value='option4'}
+:select-fulfillment-zone_select-one	{container=':_SPAView' name='select-fulfillment-zone' tagName='SELECT' type='select-one'}
+:select-measure_select-one	{container=':_SPAView' name='select-measure' tagName='SELECT' type='select-one'}
+:select-practice_select-one	{container=':_SPAView' name='select-practice' tagName='SELECT' type='select-one'}
+:select-site_select-one	{container=':_SPAView' name='select-site' tagName='SELECT' type='select-one'}
+:select-zone_select-one	{container=':_SPAView' name='select-zone' tagName='SELECT' type='select-one'}
+:show-discharged_checkbox	{container=':_SPAView' name='show-discharged' tagName='INPUT' type='checkbox' value='on'}
+:{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1	{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1
+:{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1.DIV2.DIV2	{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1.DIV2.DIV2
+:{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1.DIV2.DIV3.DIV1.DIV1.DIV2.DIV1.SECTION1.DIV1.DIV2.DIV1.SPAN1.BUTTON1.I1	{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1.DIV2.DIV3.DIV1.DIV1.DIV2.DIV1.SECTION1.DIV1.DIV2.DIV1.SPAN1.BUTTON1.I1
+:{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1.DIV2.DIV3.DIV1.SECTION1.DIV1.FORM1.DIV2.DIV5.BUTTON1.I2	{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1.DIV2.DIV3.DIV1.SECTION1.DIV1.FORM1.DIV2.DIV5.BUTTON1.I2
+:{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1.DIV4.DIV1.TABLE1.THEAD1.TR1.TH1.I1	{type='SPAView' unnamed='1' visible='1' window=':_MainWindow'}.DOCUMENT.HTML1.BODY1.DIV4.DIV1.TABLE1.THEAD1.TR1.TH1.I1

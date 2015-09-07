@@ -1,0 +1,24 @@
+from xlutils.copy import copy
+import xlrd
+import xlwt
+
+def main():
+    START_ROW = 297 # 0 based (subtract 1 from excel row number)
+    col_age_november = 1
+    col_summer1 = 2
+    col_fall1 = 3
+    file_path = "/home/dcarelo/Elotestdata.xls"
+    rb = xlrd.open_workbook(file_path)
+    r_sheet = rb.sheet_by_index(0) # read only copy to introspect the file
+    wr = copy(rb)
+    #wb = (rb) # a writable copy (I can't read values out of this, only write to it)
+    w_sheet = wr.get_sheet(0) # the sheet to write to within the writable copy
+
+    for row_index in range(START_ROW, r_sheet.nrows):
+        age_nov = r_sheet.cell(row_index, col_age_november).value
+        if age_nov == 3:
+            #If 3, then Combo I 3-4 year old  for both summer1 and fall1
+            w_sheet.write(row_index, col_summer1, 'Combo I 3-4 year old')
+            w_sheet.write(row_index, col_fall1, 'Combo I 3-4 year old')
+
+    wr.save(file_path )

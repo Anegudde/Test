@@ -1,0 +1,1 @@
+MS_HTTPXML.vbs soap_req.xml soap_resp.xml http://www.webservicex.com/globalweather.asmx http://www.webserviceX.NET/GetCitiesByCountry www.webservicex.com
