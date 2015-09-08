@@ -1,0 +1,6 @@
+Feature: My first behave feature # features\first_behave.feature:1
+
+  Scenario: Add two numbers           # features\first_behave.feature:3
+    Given I have two integers a and b # features\steps\first_behave.py:6
+    When I add the numbers            # features\steps\first_behave.py:12
+    Then I print the addition result  # features\steps\first_behave.py:17
