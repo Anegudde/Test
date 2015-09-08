@@ -1,0 +1,73 @@
+Feature: Switch to window, pop up, frame, tab # features\SWITCH_behave.feature:1
+
+  Scenario: Switch to window              # features\SWITCH_behave.feature:2
+    When I open seleniumframework website # features\steps\SWITCH_behave.py:122
+    And I click open new browser window   # features\steps\SWITCH_behave.py:15
+      Traceback (most recent call last):
+        File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1456, in run
+          match.run(runner.context)
+        File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1903, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\SWITCH_behave.py", line 17, in step_1
+          context.browser.find_element_by_id("button1").click()
+      TypeError: unbound method find_element_by_id() must be called with WebDriver instance as first argument (got str instance instead)
+
+    Then I switch to new window           # None
+    And back to parent window             # None
+
+  Scenario: Switch to JavaScript Alert        # features\SWITCH_behave.feature:8
+    When I open seleniumframework website     # features\steps\SWITCH_behave.py:122
+    And I click javascript alert window       # features\steps\SWITCH_behave.py:39
+      Traceback (most recent call last):
+        File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1456, in run
+          match.run(runner.context)
+        File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1903, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\SWITCH_behave.py", line 41, in step_4
+          context.browser.find_element_by_id("alert").click()
+      TypeError: unbound method find_element_by_id() must be called with WebDriver instance as first argument (got str instance instead)
+
+    Then I print the text in javascript alert # None
+
+  Scenario: Switch to browser tab         # features\SWITCH_behave.feature:13
+    When I open seleniumframework website # features\steps\SWITCH_behave.py:122
+    And I click new browser tab           # features\steps\SWITCH_behave.py:53
+      Traceback (most recent call last):
+        File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1456, in run
+          match.run(runner.context)
+        File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1903, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\SWITCH_behave.py", line 58, in step_6
+          new_browser_tab = next(element for element in context.browser.find_elements_by_tag_name("button")
+      TypeError: unbound method find_elements_by_tag_name() must be called with WebDriver instance as first argument (got str instance instead)
+
+    Then I switch to new tab              # None
+    And back to main window               # None
+
+  Scenario: Switch to message window      # features\SWITCH_behave.feature:19
+    When I open seleniumframework website # features\steps\SWITCH_behave.py:122
+    And I click new message window button # features\steps\SWITCH_behave.py:82
+      Traceback (most recent call last):
+        File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1456, in run
+          match.run(runner.context)
+        File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1903, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\SWITCH_behave.py", line 87, in step_9
+          new_message_window = next(element for element in context.browser.find_elements_by_tag_name("button")
+      TypeError: unbound method find_elements_by_tag_name() must be called with WebDriver instance as first argument (got str instance instead)
+
+    Then I print text for message window  # None
+
+  Scenario: Switch to frame                   # features\SWITCH_behave.feature:24
+    When I open yourhtmlsource website        # features\steps\SWITCH_behave.py:106
+      Traceback (most recent call last):
+        File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1456, in run
+          match.run(runner.context)
+        File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1903, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\SWITCH_behave.py", line 108, in step_11
+          context.browser.get("http://www.yourhtmlsource.com")
+      TypeError: unbound method get() must be called with WebDriver instance as first argument (got str instance instead)
+
+    Then I switch to frame and print its text # None
+

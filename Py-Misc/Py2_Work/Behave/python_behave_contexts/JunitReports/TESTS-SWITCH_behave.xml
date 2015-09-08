@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite errors="5" failures="0" name="SWITCH_behave.Switch to window, pop up, frame, tab" skipped="0" tests="5" time="0.002"><testcase classname="SWITCH_behave.Switch to window, pop up, frame, tab" name="Switch to window" status="failed" time="0.001"><error message="unbound method find_element_by_id() must be called with WebDriver instance as fi..." type="TypeError">
+<![CDATA[
+Failing step: And I click open new browser window ... failed in 0.001s
+Location: features\SWITCH_behave.feature:4
+Traceback (most recent call last):
+  File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1456, in run
+    match.run(runner.context)
+  File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1903, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\SWITCH_behave.py", line 17, in step_1
+    context.browser.find_element_by_id("button1").click()
+TypeError: unbound method find_element_by_id() must be called with WebDriver instance as first argument (got str instance instead)
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Switch to window
+    When I open seleniumframework website ... passed in 0.000s
+    And I click open new browser window ... failed in 0.001s
+    Then I switch to new window ... skipped in 0.000s
+    And back to parent window ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="SWITCH_behave.Switch to window, pop up, frame, tab" name="Switch to JavaScript Alert" status="failed" time="0.0"><error message="unbound method find_element_by_id() must be called with WebDriver instance as fi..." type="TypeError">
+<![CDATA[
+Failing step: And I click javascript alert window ... failed in 0.000s
+Location: features\SWITCH_behave.feature:10
+Traceback (most recent call last):
+  File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1456, in run
+    match.run(runner.context)
+  File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1903, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\SWITCH_behave.py", line 41, in step_4
+    context.browser.find_element_by_id("alert").click()
+TypeError: unbound method find_element_by_id() must be called with WebDriver instance as first argument (got str instance instead)
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Switch to JavaScript Alert
+    When I open seleniumframework website ... passed in 0.000s
+    And I click javascript alert window ... failed in 0.000s
+    Then I print the text in javascript alert ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="SWITCH_behave.Switch to window, pop up, frame, tab" name="Switch to browser tab" status="failed" time="0.0"><error message="unbound method find_elements_by_tag_name() must be called with WebDriver instanc..." type="TypeError">
+<![CDATA[
+Failing step: And I click new browser tab ... failed in 0.000s
+Location: features\SWITCH_behave.feature:15
+Traceback (most recent call last):
+  File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1456, in run
+    match.run(runner.context)
+  File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1903, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\SWITCH_behave.py", line 58, in step_6
+    new_browser_tab = next(element for element in context.browser.find_elements_by_tag_name("button")
+TypeError: unbound method find_elements_by_tag_name() must be called with WebDriver instance as first argument (got str instance instead)
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Switch to browser tab
+    When I open seleniumframework website ... passed in 0.000s
+    And I click new browser tab ... failed in 0.000s
+    Then I switch to new tab ... skipped in 0.000s
+    And back to main window ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="SWITCH_behave.Switch to window, pop up, frame, tab" name="Switch to message window" status="failed" time="0.0"><error message="unbound method find_elements_by_tag_name() must be called with WebDriver instanc..." type="TypeError">
+<![CDATA[
+Failing step: And I click new message window button ... failed in 0.000s
+Location: features\SWITCH_behave.feature:21
+Traceback (most recent call last):
+  File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1456, in run
+    match.run(runner.context)
+  File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1903, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\SWITCH_behave.py", line 87, in step_9
+    new_message_window = next(element for element in context.browser.find_elements_by_tag_name("button")
+TypeError: unbound method find_elements_by_tag_name() must be called with WebDriver instance as first argument (got str instance instead)
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Switch to message window
+    When I open seleniumframework website ... passed in 0.000s
+    And I click new message window button ... failed in 0.000s
+    Then I print text for message window ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="SWITCH_behave.Switch to window, pop up, frame, tab" name="Switch to frame" status="failed" time="0.001"><error message="unbound method get() must be called with WebDriver instance as first argument (g..." type="TypeError">
+<![CDATA[
+Failing step: When I open yourhtmlsource website ... failed in 0.001s
+Location: features\SWITCH_behave.feature:25
+Traceback (most recent call last):
+  File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1456, in run
+    match.run(runner.context)
+  File "d:\progapps\py2710\lib\site-packagesehave\model.py", line 1903, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\SWITCH_behave.py", line 108, in step_11
+    context.browser.get("http://www.yourhtmlsource.com")
+TypeError: unbound method get() must be called with WebDriver instance as first argument (got str instance instead)
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Switch to frame
+    When I open yourhtmlsource website ... failed in 0.001s
+    Then I switch to frame and print its text ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
