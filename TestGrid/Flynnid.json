@@ -1,0 +1,23 @@
+{
+    "hub": {
+        "host": "10.137.235.57",
+        "port": 4444
+    },
+    "nodes": [{
+        "host": "10.137.235.57",
+        "port": 8080,
+        "browser": {
+            "name": "android",
+            "version": "4"
+        },
+        "platform": "ANDROID"
+    },{
+        "host": "10.137.235.47",
+        "port": 8080,
+        "browser": {
+            "name": "android",
+            "version": "4"
+        },
+        "platform": "ANDROID"
+    }]
+}
