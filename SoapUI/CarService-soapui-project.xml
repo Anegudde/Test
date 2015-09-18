@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:nks="http://nks34.t320">
+   <soap:Header/>
+   <soap:Body>
+      <nks:helloName>
+         <!--Optional:-->
+         <nks:name>TestName</nks:name>
+      </nks:helloName>
+   </soap:Body>
+</soap:Envelope>

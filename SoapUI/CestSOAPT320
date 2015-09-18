@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="aaa6c9d3-c679-4ee7-989a-ecc8dc89e141" activeEnvironment="Default" name="TestSOAPT320" resourceRoot="" soapui-version="5.2.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="HelloT302SUite"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="D:\ProgApps\SoapUI-5.2.0\bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="true"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="true"/>
+  <con:entry key="Enable UI" value="true"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="true"/>
+  <con:entry key="Endpoint" value="http://t320webservices.open.ac.uk/t320/services/HelloService?wsdl"/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="f2a94d04-d9b3-44d0-bf20-9e60a6dfcf2e" wsaVersion="NONE" name="HelloServiceSOAP12Binding" type="wsdl" bindingName="{http://nks34.t320}HelloServiceSOAP12Binding" soapVersion="1_2" anonymous="optional" definition="http://t320webservices.open.ac.uk/t320/services/HelloService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://t320webservices.open.ac.uk:80/t320/services/HelloService</con:endpoint><con:endpoint>https://t320webservices.open.ac.uk:80/t320/services/HelloService</con:endpoint></con:endpoints><con:operation id="392890ca-b65d-428e-b18d-ec20ae91390f" isOneWay="false" action="urn:helloName" name="helloName" bindingOperationName="helloName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a27e579b-f41b-4b71-bc78-2834094155fb" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://t320webservices.open.ac.uk:80/t320/services/HelloService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:nks="http://nks34.t320">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <nks:helloName>\r
+         <!--Optional:-->\r
+         <nks:name>Vikram</nks:name>\r
+      </nks:helloName>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:helloName"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="9e6416c5-049c-4b85-84d6-79365b8b9543" name="HelloT302SUite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="a63c4c0c-178b-4c10-9f02-cb789b7c05ca" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="HelloT320Case" searchProperties="true"><con:settings/><con:testStep type="request" id="c844a875-eac9-4614-b8dc-a5c0aefb501b" name="helloName - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloServiceSOAP12Binding</con:interface><con:operation>helloName</con:operation><con:request name="helloName - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="3ff66b9b-779e-491c-902e-a4fa07a30444"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://t320webservices.open.ac.uk:80/t320/services/HelloService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:nks="http://nks34.t320">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <nks:helloName>\r
+         <!--Optional:-->\r
+         <nks:name>Vikram</nks:name>\r
+      </nks:helloName>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4199b0c2-e758-4965-acaa-2f13544f66e6" name="SOAP Response"/><con:assertion type="Schema Compliance" id="1789d4c5-26b0-4393-8774-e4dd9595f470" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="37b2ef28-5109-44b3-a41b-eee26392669a" name="Contains"><con:configuration><token>Vikram</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:helloName"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="c4eec083-3115-4393-bbea-3968fe4b8036" name="LoadTest 1"><con:settings/><con:threadCount>10</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Burst</con:type><con:config><burstDelay>60000</burstDelay><burstDuration>10000</burstDuration></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:assertion type="Step TPS" name="Step TPS"><con:configuration><name>Step TPS</name><min-requests>100</min-requests><min-value>10</min-value><test-step>- Total -</test-step><max-errors>-1</max-errors></con:configuration></con:assertion><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
