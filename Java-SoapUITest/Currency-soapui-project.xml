@@ -324,7 +324,73 @@
          <web:ToCurrency>?</web:ToCurrency>\r
       </web:ConversionRate>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/CurrencyConvertorSoap/ConversionRateRequest"/></con:call></con:operation></con:interface><con:testSuite id="09d75470-4507-4e7c-a41d-a90bd13e6bef" name="Currency-EUR-USD"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7c41ceab-e99a-40a7-b2d3-cf13189781eb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Conversion testSuite" searchProperties="true"><con:settings/><con:testStep type="request" id="9b268fca-2bde-4df4-b881-9a28ec93c31f" name="ConversionRate - EUR-USD"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CurrencyConvertorSoap</con:interface><con:operation>ConversionRate</con:operation><con:request name="ConversionRate - EUR-USD" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="f84035f5-7c6e-46f9-9eff-057b4727804f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/CurrencyConvertor.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET/">\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/CurrencyConvertorSoap/ConversionRateRequest"/></con:call></con:operation></con:interface><con:testSuite id="09d75470-4507-4e7c-a41d-a90bd13e6bef" name="Currency-EUR-USD"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7c41ceab-e99a-40a7-b2d3-cf13189781eb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Conversion testSuite" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="a32f1d88-e8c5-4f74-ab60-b9fbcd28e3a9"><con:settings/><con:config><script>// Invoke Method
+MethodWithThrowKeyword();
+
+void MethodWithThrowKeyword() throws ArrayIndexOutOfBoundsException
+{
+    String[] countryNames = new String[5];
+    countryNames[0] = 'India';
+    countryNames[1] = 'Cyprus';
+    countryNames[2] = 'Canada';
+    countryNames[3] = 'Austria';
+    countryNames[4] = 'Mauritius';
+    for(int idx=0; idx&lt;5; idx++)
+    {
+        log.info('Country Names: ' + countryNames[idx]);
+    }
+}
+
+
+http://www.softwaretestinghelp.com/soapui-tutorial-11-exception-handling-in-soapui-groovy-scripts/
+
+// initializing the variables
+int a = 10;
+int b = 0;
+//int c=a/b
+//log.info('Result:'+c)
+// try, catch block
+try
+{
+    // Dividing a number by zero
+    int c = a/b;
+    log.info('Result :' + c);
+}
+catch(Exception expObj)
+{
+  // Exception Handler
+  log.info('You are trying to divide ' + a + ' by ' + b + '. This is not possible actually!');
+}
+
+
+
+String[] countryNames = new String[5];
+// Try block
+try    
+{
+
+    countryNames[0] = 'India';
+    countryNames[1] = 'Cyprus';
+    countryNames[2] = 'Canada';
+    countryNames[3] = 'Austria';
+    countryNames[4] = 'Mauritius';
+ 
+    for(int idx=0; idx&lt;5; idx++)
+    {
+        com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "CountryName", countryNames[idx]);
+        //def testStep = testRunner.testCase.testSteps['GetCitiesByCountry'];
+        //testStep.run(testRunner,context);
+        log.info('Executed at ' + idx + ' times!');
+    }
+}
+catch(Exception exp) // Catch the exception and displaying the message in the log
+{
+    log.info('You are trying to access invalid array index. Please check and try again!');
+}
+
+
+
+</script></con:config></con:testStep><con:testStep type="request" id="9b268fca-2bde-4df4-b881-9a28ec93c31f" name="ConversionRate - EUR-USD"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CurrencyConvertorSoap</con:interface><con:operation>ConversionRate</con:operation><con:request name="ConversionRate - EUR-USD" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="f84035f5-7c6e-46f9-9eff-057b4727804f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/CurrencyConvertor.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <web:ConversionRate>\r
@@ -338,4 +404,15 @@ declare namespace ns1='http://www.webserviceX.NET/';
 declare namespace ns1='http://www.webserviceX.NET/';
 ns1:ConversionRateResult &lt; 2</path><content>&lt;xml-fragment>false&lt;/xml-fragment></content><allowWildcards>false</allowWildcards></con:configuration></con:assertion><con:assertion type="XQuery Match" id="11f6be4d-3521-41db-abde-212c9d2f1133" name="XQuery Match 2"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
 declare namespace ns1='http://www.webserviceX.NET/';
-//ns1:ConversionRateResponse[1]/ns1:ConversionRateResult &lt; 2</path><content>&lt;xml-fragment>true&lt;/xml-fragment></content><allowWildcards>false</allowWildcards></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/ConversionRate"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="properties" name="Properties" id="95dd3c3c-4b6f-458b-8345-f10b2573d670"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>SEK</con:name><con:value>SEK</con:value></con:property><con:property><con:name>INR</con:name><con:value>INR</con:value></con:property><con:property><con:name>EUR</con:name><con:value>EUR</con:value></con:property></con:properties></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+//ns1:ConversionRateResponse[1]/ns1:ConversionRateResult &lt; 2</path><content>&lt;xml-fragment>true&lt;/xml-fragment></content><allowWildcards>false</allowWildcards></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/ConversionRate"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="properties" name="Properties" id="95dd3c3c-4b6f-458b-8345-f10b2573d670"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>SEK</con:name><con:value>SEK</con:value></con:property><con:property><con:name>INR</con:name><con:value>INR</con:value></con:property><con:property><con:name>EUR</con:name><con:value>EUR</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="jdbc" name="JDBC Request" id="58ac7d2f-35c4-4cc6-9057-cfa9487784fa"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties/></con:config></con:testStep><con:testStep type="groovy" name="TestAccessor" id="33283bbc-b189-4251-ad87-385f9dd4b0d1"><con:settings/><con:config><script>String testString = "TestString1"
+testRunner.testCase.setPropertyValue( "Pro_Response", testString )
+def getLocalPropValue = testRunner.testCase.getPropertyValue("Pro_Response")
+log.info(getLocalPropValue)
+
+/*
+testRunner.testCase.setPropertyValue( " LocalPropertyName ", someValue )
+testRunner.testCase.testSuite.setPropertyValue( " LocalPropertyName ", someValue )
+testRunner.testCase.testSuite.project.setPropertyValue(" LocalPropertyName ", someValue )
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( " GlobalPropertyName ", someValue )
+*/
+log.info(CountryName)</script></con:config></con:testStep><con:properties><con:property><con:name>Pro_Response</con:name><con:value>TestString1</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
