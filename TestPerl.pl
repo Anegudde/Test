@@ -153,3 +153,18 @@ print "\n Group Partition and Sub partition creation shall take few hours\n";
 `./KpiSetupSubPartitionsGroup.sh &`;
 
 print "Complete \n\n";
+
+/*
+<insert_group_details>
+                <insert_group>
+			<relay_group>Test1</relay_group>
+                        <group_name>Display:Test1</group_name>
+                </insert_group>
+<insert_group>
+                        <relay_group>Test2</relay_group>
+                        <group_name>Display:Test2</group_name>
+                </insert_group>
+</insert_group_details>
+
+
+*/
