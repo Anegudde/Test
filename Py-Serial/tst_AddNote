@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+import codecs, filecmp, os, subprocess, sys
+def main():    
+    '''
+    longPress(waitForObject(":Monitoring Activity.lib_vsc_surface_view_View"), 788, 106)
+    tapObject(waitForObject(":Monitoring Activity.Cervical ripening_Text"), 37, 43)
+    tapObject(waitForObject(":Monitoring Activity.Insert_Button"), 108, 42)
+    longPress(waitForObject(":Monitoring Activity.lib_vsc_surface_view_View"), 130, 89)
+    longPress(waitForObject(":Monitoring Activity.lib_vsc_surface_view_View"), 804, 106)
+    tapObject(waitForObject(":Monitoring Activity.FSE inserted_Text"), 100, 45)
+    tapObject(waitForObject(":Monitoring Activity.FSE inserted_Text"), 46, 48)
+    tapObject(waitForObject(":Monitoring Activity.Insert_Button"), 82, 52)
+    tapObject(waitForObject(":Monitoring Activity.lib_vsc_surface_view_View"), 807, 100)
+    longPress(waitForObject(":Monitoring Activity.lib_vsc_surface_view_View"), 782, 84)
+    tapObject(waitForObject(":Monitoring Activity.Keyboard_Button"), 76, 28)
+    tapObject(waitForObject(":Monitoring Activity.Keyboard_Button"), 33, 44)
+    type(waitForObject(":Monitoring Activity.48 charcter max_Edit"), "test  message")
+    tapObject(waitForObject(":Monitoring Activity.Insert_Button"), 72, 47)
+    longPress(waitForObject(":Monitoring Activity.lib_vsc_surface_view_View"), 774, 88)
+    tapObject(waitForObject(":Monitoring Activity.lib_keyboard_cross_btn_Image"), 25, 37)
+    waitForObject("{aboveObject=':Monitoring Activity.48 charcter max_Text' container=':Monitoring Activity_Activity' resourceName='lib_keyboard_edt_txt' type='Edit' visible='true'}")
+    '''
+    try:
+        dataset = testData.dataset("Instrument.csv");
+        #dataset = testData.dataset(findFile("testdata", "Instrument.csv"));
+        #dataset = testData.dataset(squishinfo.testCase + "/../shared/testdata/Instrument.csv")
+        for row in dataset:
+            Instrument = testData.field(row, "Instrument")
+            CommandString = testData.field(row, "CommandString")
+            test.log("Next row:")
+            test.log("  " + Instrument)
+            test.log("  " + CommandString)        
+    except Exception as e:
+        print "Cannot Open the Excel"
+    print type(fields)
