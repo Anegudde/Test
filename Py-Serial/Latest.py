@@ -167,7 +167,11 @@ def main():
     #Launch the APK and connect to AUT
     launch_APK_AUT()
     #change the Burst period 
-    Set_Burst_Period(0.5)    
+    Set_Burst_Period(0.5) 
+    #Change the Burst Period and wait for 2 Seconds tom check the Value
+    for i in range(1, 10):
+        time.sleep(2)
+        Set_Burst_Period(i/10.0)
     #Get Initial Values
     test_Values_USB() 
     #Sleep for Period
@@ -179,4 +183,6 @@ def main():
 if __name__ == '__main__':
     checkEnabled =0
     main()
+    
+    
     
