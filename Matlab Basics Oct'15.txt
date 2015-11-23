@@ -1,0 +1,92 @@
+Class 1:
+Environment Setup
+	Installation and Workspace
+Syntax
+	Variable Naming
+	Semicolon
+Variables
+	Vectors
+		Row and Columns
+	Matricies
+Commands
+	Commandline Commands	
+	Help Files
+	Module Commands
+
+Class 2:
+M-Files
+	Scripts
+	Functions
+Data Types
+	Int8
+	Single
+	Double
+	Logical
+	Cell Arrays	
+	Structure
+		Data Type Conversion	
+Operators
+	Arithmentic
+	Relational
+	Logical
+	Bitwise
+	Set 
+Decisions
+	if.. end
+	if else .. end
+	Nested if
+	Switch	
+Loops
+	While
+	For
+	Nested For
+	Break
+	Continue
+Vectors
+	Row
+	Columns
+	Vector Operations
+Matrix
+	Matrix Operations
+Arrays
+	Special Arrays:
+		Zeros()
+		Ones()
+		eye()
+		rand()
+		cell()
+Colon Notation
+	1:10	
+Numbers
+	single()
+	double()
+	int8(), int16(), int32() and Int64()
+Strings
+	Joining Strings: strjoin()
+	Replace Strings: strrep()
+Functions
+	Anonymous Functions 
+	Nested Functions
+	Private Functions
+Data Import
+	importdata(filename, delimiter, HeaderLine)
+	low-level File I/O
+Data Output
+	save() with Filename -ascii format
+	dlmwrite ()
+	using diary()
+	file operations
+Advanced
+Plotting
+	plot()
+	title()
+Graphics
+Algebra
+Calculus
+Differential
+Integration
+Polynomials
+Transforms
+GNU Octave
+Simulink
+
