@@ -1,0 +1,25 @@
+Server Running on Command#1:
+<IDEPATH>\squish-6.0.1-android-win32\bin>squishserver.exe  &
+Port: 4322
+17:51:34:973 Debug: Connection established from 127.0.0.1:54383
+17:51:34:992 Debug: Connection closed from 127.0.0.1:54383
+17:52:08:313 Debug: Connection established from 127.0.0.1:57020
+17:52:08:315 Debug: Connection closed from 127.0.0.1:57020
+17:53:33:757 Debug: Connection established from 127.0.0.1:57028
+17:53:35:342 Debug: Connection closed from 127.0.0.1:57028
+
+
+
+SquishRunner Running on Command#2:
+<IDEPATH>\squish-6.0.1-android-win32\bin>squishrunner.exe  --info android
+Devices
+* This is an EVALUATION version of Squish. *
+0a5c01c342e18297
+emulator-5554
+
+C:\Lotus\Squish6\squish-6.0.1-android-win32\bin>squishrunner.exe  --info android
+Instrumentation
+* This is an EVALUATION version of Squish. *
+emulator-5554   com.froglogic.addressbook       com.froglogic.addressbook
+emulator-5554   com.froglogic.squish.browserhost        com.froglogic.squish.bro
+wserhost
