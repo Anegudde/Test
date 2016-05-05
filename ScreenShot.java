@@ -20,4 +20,3 @@ class Test1{
 		System.out.println("ScreenshotCaptured");
 		}
 }
-
